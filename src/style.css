@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: #282C34;
+}
+
+.to-do-container {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #efefef;
+    font-family: Roboto,
+        sans-serif;
+    box-shadow:
+        /* The top layer shadow */
+        0 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.to-do-item {
+    margin: auto;
+    font-family: Roboto,
+        sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    padding: 20px 10px 0;
+    border: solid 1px #cecece;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.header {
+    background-color: #282C34
+}
+
+.heading {
+    text-align: center;
+    color: whitesmoke;
+}
