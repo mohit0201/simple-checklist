@@ -17,7 +17,10 @@ class App extends Component {
     this.setState(prevState => {
       const updatedTodos = prevState.todos.map(todo => {
         if(todo.id === id) {
-          todo.completed = !todo.completed
+          return {
+            ...todo,
+            completed: !todo.completed
+          }
         }
         return todo
       })
@@ -26,12 +29,12 @@ class App extends Component {
       }
     })
   }
-  
+
   render() {
 
     const todoItems = this.state.todos.map(item => <ToDoItem key={item.id} item={item} handleChange={this.handleChange}/>)
 
-    return( 
+    return(
       <div className="to-do-container">
         <Header />
         <h1 className="heading">Here's your To Do List</h1>
